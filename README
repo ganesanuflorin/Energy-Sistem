@@ -1,0 +1,25 @@
+	Pentru efectuarea temei am facut clasele pentru input, output si 
+clasele necesare pentru update-uri in asa fel incat obiectele din biblioteca
+com.fasterxml.jackson sa le recunoasca si sa usureze parsarea inputului.
+De asemenea am implementat functionalitatile minime cerute in etapa1.
+	Am implementat Strategy sortand pentru fiecare tip de strategie listele
+de producatori si alegand din aceasta numarul potrivit de producatori.
+	Am ales sa memorez dependentele distribuitor-producatori si
+luna-producatori in 2 HashMap-uri.
+	Initial am setat bugetul tuturor participantilor la simulare,
+si am urmarit pasii dati in cerinta. Cazul in care suntem in runda 0 este
+tratat separat.
+	Am facut metode necesare rezolvarii: executeStrategy (verifica daca
+vreun producator a fost modificat si aplica pentru toti distribuitorii sai
+strategia corespunzator. La final completez in HashMap-ul luna-producatori
+pentru fiecare distribuitor). 
+outBuilder (construieste output-ul pentru objectMapper).
+consGetContrAddMoney (consumatorii isi primesc veniturile lunare si isi aleg
+un contract). normalTurnUpdate (se modifica consumatorii si distribuitorii dupa
+schimbarea data in input). consumersPayDistributors (consumatorii isi platesc
+distribuitorii).
+	
+	PS. Cerinta foarte clara si datele din directorul ref foarte clare si
+perfecte pt debug.
+	
+	Nume, grupa
